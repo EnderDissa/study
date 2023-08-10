@@ -1,4 +1,4 @@
-# Second term core subject
-(2023 - Spring)
+# Databases
 
-databases
+Second term core subject
+(2023 - Spring)
