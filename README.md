@@ -1,2 +1,1 @@
-# study
- 
+# ITMO university '26
