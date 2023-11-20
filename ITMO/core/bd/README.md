@@ -1,4 +1,4 @@
 # Databases
 
-Second term core subject
+II term core subject
 (2023 - Spring)
