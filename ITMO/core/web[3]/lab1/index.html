@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denis Berman</title>
+    <link rel="icon" href="pics/pic1.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+<div class="page">
+    <header class="header">
+        <div class="container">
+            <div class="header_title">
+                |Берман Денис Константинович|P3233|
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="main_title">WEB №1, вариант 1413</h1>
+            <div class="main_row">
+                <div class="main_left">
+                    <img src="pics/RES.png">
+<!--                <canvas id="graph"></canvas>-->
+                </div>
+                <div class="main_right">
+                    <form id="form"  method="post">
+                        <label class="form_label">введите X:</label>
+                        <div class="form_row">
+                            <button class="form__r-btn" type="button" value=1>1</button>
+                            <button class="form__r-btn" type="button" value=1.5>1.5</button>
+                            <button class="form__r-btn" type="button" value=2>2</button>
+                            <button class="form__r-btn" type="button" value=2.5>2.5</button>
+                            <button class="form__r-btn" type="button" value=3>3</button>
+                        </div>
+                        <label for="Y"class="form__label">введите Y:</label>
+                        <div class="form_row">
+                            <input id="Y"required class="form__y-input" name="y" placeholder="Введите Y от -3 до 5" step="any" type="text" value="">
+                        </div>
+                        <label class="form__label"id="r">введите R</label>
+                        <div class="form__row">
+                            <input type="radio" id="x1" name="r"value=1>
+                            <label for="x1">1</label>
+                            <input type="radio" id="x2" name="r"value=1.5>
+                            <label for="x2">1.5</label>
+                            <input type="radio" id="x3" name="r"value=2>
+                            <label for="x3">2</label>
+                            <input type="radio" id="x4" name="r"value=2.5>
+                            <label for="x4">2.5</label>
+                            <input type="radio" id="x5" name="r"value=3>
+                            <label for="x5">3</label>
+                        </div>
+
+                        <p id="error-message"></p>
+                        <div class="form_row">
+                            <button class="form__big-btn" disabled type="submit" id="submit_button">Submit</button>
+                            <button class="form__big-btn" type="reset" id="remove_button">Clear</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="main_table-block">
+                    <table class="main_table" id="table">
+                        <thead>
+                        <tr>
+                            <th>X</th>
+                            <th>Y</th>
+                            <th>R</th>
+                            <th>затрачено</th>
+                            <th>время</th>
+                            <th>результат</th>
+                        </tr>
+                        </thead>
+                        <tbody class="table2" id="table2">
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer_text">
+                    <a class="footer__title" href="https://se.ifmo.ru/courses/web">
+                        2023 / ITMO
+                    </a>
+                </div>
+            </div>
+        </footer>
+<!--        <div class="container">-->
+<!--            <div class="box-1"><img src="/pic1.png" alt="123"></div>-->
+<!--            <div class="box-2">B</div>-->
+<!--            <div class="box-3">C</div>-->
+<!--            <div class="box-4">D</div>-->
+<!--        </div>-->
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
