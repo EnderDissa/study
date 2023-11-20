@@ -1,2 +1,1 @@
-[[![alt text](https://github.com/[EnderDIssa]/[study]/[ITMO]/[core]/[inf]/[ano]/blob/[main]/aboutAnnotations.png?raw=true)](https://github.com/EnderDIssa/study/issues/1#issue-2002665236)
-](https://github.com/EnderDIssa/study/issues/1#issue-2002665236)https://github.com/EnderDIssa/study/issues/1#issue-2002665236
+![aboutAnnotations](https://github.com/EnderDIssa/study/assets/54418849/566509d8-86a0-4f3e-8262-3f6e763e24fc)
