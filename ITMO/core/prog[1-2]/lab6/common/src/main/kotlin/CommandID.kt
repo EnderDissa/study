@@ -1,0 +1,35 @@
+package common
+
+//enum class CommandRequestID(val id: String) {
+//    ADD("ADD_CMD"),
+//    ADDIFMAX("ADD_IF_MAX_CMD"),
+//    ADDIFMIN("ADD_IF_MIN_CMD"),
+//    EXECUTE_SCRIPT("EXECUTE_SCRIPT_CMD"),
+//    HELP("HELP_CMD"),
+//    INFO("INFO_CMD"),
+//    MAX_SCREENWRITER("MAX_SCREENWRITER_CMD"),
+//    PRINT_ASCENDING("PRINT_ASCENDING_CMD"),
+//    PRINT_DESCENDING("PRINT_DESCENDING_CMD"),
+//    REMOVE_BY_ID("REMOVE_BY_ID_CMD"),
+//    REMOVE_LOWER("REMOVE_LOWER_CMD"),
+//    SHOW("SHOW_CMD"),
+//    UPDATE_BY_ID("UPDATE_BY_ID_CMD")
+//}
+
+ enum class CommandID {
+    ADD,
+    ADDIFMAX,
+    ADDIFMIN,
+    EXECUTE_SCRIPT,
+    HELP,
+    INFO,
+    MAX_SCREENWRITER,
+    PRINT_ASCENDING,
+    PRINT_DESCENDING,
+    REMOVE_BY_ID,
+    REMOVE_LOWER,
+    SHOW,
+    UPDATE_BY_ID,
+    EXIT,
+    NONE
+}
