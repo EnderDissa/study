@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://primefaces.org/ui ">
+
+<h:head>
+    <link rel="stylesheet" type="text/css" href="styles/main.css"/>
+    <title>Web Lab 3</title>
+</h:head>
+
+<h:body>
+    <h1 id="my_name">Берман Денис Константинович, P3233</h1>
+    <h2 id="lab_work">Лабораторная работа 3</h2>
+    <div class="aaa">
+        <div>
+            <div class="canvasss">
+                <canvas id="canvas" width="500" height="500"/>
+                <script type="application/javascript" src="resources/js/canvas.js"></script>
+                <script type="application/javascript" src="resources/js/CanvasDrawer.js"></script>
+                <h:panelGroup id="updateCanvas">
+<!--                    перерисовывет график-->
+                    <script type="application/javascript" src="resources/js/newDotCanvas.js"/>
+                </h:panelGroup>
+            </div>
+
+            <h:form >
+                <p:outputLabel value="Выберите R:"/>
+                <p:commandButton value="1" action="#{dotsBean.updateR(1)}" id="r_menu1" onclick="canvasDrawer.drawArea(1)">
+                    <f:ajax execute="@form" render="@none"/>
+                </p:commandButton>
+                <p:commandButton value="1.5" action="#{dotsBean.updateR(1.5)}" id="r_menu1x5" onclick="canvasDrawer.drawArea(1.5)">
+                    <f:ajax execute="@form" render="@none"/>
+                </p:commandButton>
+                <p:commandButton value="2" action="#{dotsBean.updateR(2)}" id="r_menu2" onclick="canvasDrawer.drawArea(2)">
+                    <f:ajax execute="@form" render="@none"/>
+                </p:commandButton>
+                <p:commandButton value="2.5" action="#{dotsBean.updateR(2.5)}" id="r_menu2x5" onclick="canvasDrawer.drawArea(2.5)">
+                    <f:ajax execute="@form" render="@none"/>
+                </p:commandButton>
+                <p:commandButton value="3" action="#{dotsBean.updateR(3)}" id="r_menu3" onclick="canvasDrawer.drawArea(3)">
+                    <f:ajax execute="@form" render="@none"/>
+                </p:commandButton>
+            </h:form>
+            <h:form>
+            <div class="paramss">
+
+            <div class="param">
+                <p:outputLabel value="Выберите Y:"/>
+                <p:inputText id="y_param"
+                             type="text"
+                             maxlength = "17"
+                             value="#{dotsBean.newDot.y}"
+                             validator="#{mobile.validateModelNo}"
+                             validatorMessage="Значение y не входит в [-5; 5]"
+                             requiredMessage="Введите Y"
+                             converterMessage="Значение y должно быть числом"
+                            required="true">
+                <f:validateDoubleRange minimum="-5" maximum="5"/>
+
+                </p:inputText>
+                <span class="error" aria-live="polite"></span>
+
+                <h:message for="y_param" styleClass="fail"/>
+
+
+                <div id="X">
+                    <p:outputLabel value="Выберите X:"/>
+                    <p:spinner id="spinner"
+                               value="#{dotsBean.newDot.x}"
+                               step="0.1"
+                               stepFactor="0.1"
+                               min="-5" max="5"
+                               required="true"
+                               requiredMessage="spin me"/>
+                </div>
+
+            </div>
+
+
+
+            </div>
+            <div class="buttonss">
+                <h:commandButton type="submit"
+                                 styleClass="butt"
+                                 id="check"
+                                 value="Проверить"
+                                 action="#{dotsBean.add()}">
+                </h:commandButton>
+                <h:button value="На стартовую страницу"
+                          id="to_start"
+                          styleClass="butt"
+                          outcome="to_start"
+                />
+            </div>
+
+        </h:form>
+    </div>
+
+    </div>
+    <div class="result_in_table">
+        <h:form id="paginat">
+            <h:dataTable id="pagBut" value="#{dotsBean.pagBut}" var="str">
+                <h:column>
+                    <h:commandButton styleClass="#{dotsBean.getPageClass(str)}" value="#{str + 1}" action="#{dotsBean.loadStr(str)}"/>
+                </h:column>
+
+            </h:dataTable>
+        </h:form>
+
+        <h:dataTable id="table" value="#{dotsBean.dots}" var="dot" border="1">
+            <h:column>
+                <f:facet name="header">№</f:facet>
+                <h:outputText id="num" value="#{dot.id}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">X</f:facet>
+                <h:outputText id="x" value="#{dot.x}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Y</f:facet>
+                <h:outputText id="y" value="#{dot.y}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">R</f:facet>
+                <h:outputText id="r" value="#{dot.r}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Результат</f:facet>
+                <h:outputText styleClass="#{dot.resultClass}" id="result" value="#{dot.resultString}"/>
+            </h:column>
+            <h:column>
+                <f:facet name="header">Время</f:facet>
+                <h:outputText id="time" value="#{dot.time}"/>
+            </h:column>
+        </h:dataTable>
+
+
+<!--        загружает первую страницу-->
+        <p:remoteCommand name="checkUpdate" action="#{dotsBean.loadStartStr()}" update="table" process="@this"/>
+<!--        точку с графика на сервер-->
+        <p:remoteCommand name="addDotFromCanvas" action="#{dotsBean.addFromCanvas()}" update="table" process="@this"/>
+<!--        перерисовывает график-->
+        <p:remoteCommand name="updateCan" update="updateCanvas" process="@this"/>
+<!--        обновляет кнопки пагинации-->
+        <p:remoteCommand name="updateButtons" update="paginat"/>
+      <!--  <p:remoteCommand name="setParamR" action="#{dotsBean.newDot.setR(1)}" process="@this"/> -->
+
+    </div>
+</h:body>
+
+</html>

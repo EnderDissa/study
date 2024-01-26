@@ -1,0 +1,70 @@
+#my_name, #lab_work {
+    font-family: fantasy;
+    color: royalblue;
+    text-shadow: 2px 2px 2px black;
+    font-size: 3rem;
+    word-spacing: 4pt;
+    letter-spacing: 2pt;
+}
+
+#lab_work{
+    font-size: 2rem;
+}
+body{
+    background-color: navajowhite;
+}
+#to_main_button{
+    background-color: cornflowerblue;
+    font-weight: bold;
+    padding: 4px 9px 4px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+#to_main_button:hover, #to_main_button:focus{
+    background-color: lightpink;
+}
+
+#clock, #time{
+    font-family: fantasy;
+    color: dodgerblue;
+    text-shadow: 2px 2px 2px black;
+    font-size: 4rem;
+    word-spacing: 4pt;
+    letter-spacing: 2pt;
+}
+
+
+
+img {
+    height: 450px;
+}
+.but{
+    background-color: royalblue;
+    font-weight: bold;
+    padding: 4px 9px 4px;
+    font-size: large;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+#form{
+    margin: auto;
+    width: 35px;
+    vertical-align: center;
+}
+.but:hover, .but:focus{
+     background-color: lightpink;
+ }
+h1, h2, .but, #clock{
+    text-align: center;
+}
+
+.view{
+    float: left;
+    width: 50%;
+}
+.pig{
+    float: right;
+    width: 50%;
+
+}

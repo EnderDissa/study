@@ -1,0 +1,1 @@
+canvasDrawer.drawArea(canvasDrawer.lastR);

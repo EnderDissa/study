@@ -1,0 +1,141 @@
+body {
+    background-color: navajowhite;
+    width: 100%;
+}
+#my_name, #lab_work {
+    font-family: fantasy;
+    color: royalblue;
+    text-shadow: 2px 2px 2px black;
+    font-size: 3rem;
+    word-spacing: 4pt;
+    letter-spacing: 2pt;
+}
+#lab_work{
+    font-size: 2rem;
+}
+
+img {
+    height: 300px;
+}
+
+#table tr:hover {
+    color: darkblue;
+    background-color: hotpink;
+}
+#table > header {
+    font-size: large;
+}
+
+#table > thead {
+    font-size: larger;
+    font-weight: bold;
+    background-color: royalblue;
+    height: 2.5ch;
+}
+
+#table > tr{
+    height: 20px;
+}
+
+h1, h2, #table > tr{
+    text-align: center;
+}
+
+.butt {
+    background-color: cornflowerblue;
+    font-weight: bold;
+    padding: 4px 9px 4px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+}
+#to_start{
+    font-weight: bold;
+    padding: 4px 9px 4px;
+    font-size: large;
+    display: flex;
+    justify-content: center;
+    background-color: royalblue;
+}
+
+.butt:hover, .butt:focus{
+    background-color: lightpink;
+}
+#to_start:hover, #to_start:focus{
+    background-color: lightpink;
+}
+.spinner{
+    white-space: nowrap;
+}
+
+a{
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    width: 6%;
+    margin-right: 0.4%;
+    text-align: center;
+    line-height: 1;
+    padding: 3px 3px 3px;
+    color: black;
+    background-color: lightpink;
+}
+.pagination{
+    background-color: lightpink;
+    width: 30px;
+}
+.currentPag{
+    background-color: royalblue;
+    width: 30px;
+}
+
+.nonePag{
+    display: none;
+}
+
+a:link, a:visited{
+    color: black;
+    background-color: lightpink;
+}
+a:hover, a:focus, .pagination:hover, .pagination:focus{
+    background-color: royalblue;
+    border-bottom: 1px solid;
+}
+a:active, .pagination:active{
+    background: cornflowerblue;
+    color: black;
+}
+.success{
+    color: green;
+}
+.fail {
+    color: red;
+}
+
+.aaa{
+    float: left;
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    flex-basis: auto;
+}
+.result_in_table{
+    float: right;
+    width: 50%;
+    display: flex;
+}
+img {
+    height: 700px;
+}
+.param {
+    font-size: large;
+    font-weight: bold;
+    flex-grow: 2;
+    margin: auto;
+}
+.canvasss, .buttonss{
+    flex-grow: 1;
+    margin: auto;
+}
+
