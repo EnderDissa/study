@@ -140,7 +140,7 @@ public class DotsBean implements Serializable {
 
 
     //пришла новая точка с канваса, создаем и вызываем ее добавление в бд
-    public void addFromCanvas(){
+    public void addFromGraph(){
         final Map<String, String> params = FacesContext.getCurrentInstance().getExternalContext().getRequestParameterMap();
         // params.values().forEach(System.out::println);
         try{
@@ -174,7 +174,7 @@ public class DotsBean implements Serializable {
     }
 
     public void updateR(double r){
-        System.out.println("RR= "+r);
+        System.out.println("R= "+r);
         newDot.setR(r);
     }
 
@@ -184,9 +184,9 @@ public class DotsBean implements Serializable {
         Double y = dot.getY();
         Double r = dot.getR();
 
-        return ((x * x + y * y <= r * r) && -r <= y && y <= 0 && x<=0) ||     // л н круг
-                (x >= -r && y <= r/2 && x <= 0 && y >= 0) ||     // Прямоугольник л в
-                (y <= - (2*x) + (r)  && x >= 0 && y >= 0); // треугл
+        return ((x * x + y * y <= r * r) && -r <= y && y <= 0 && x>=0) ||     // л н круг
+                (x <= r/2 && y <= r && x >= 0 && y >= 0) ||     // Прямоугольник л в
+                (y <= (x) + (r)  && x <= 0 && y >= 0); // треугл
 
     }
 }
