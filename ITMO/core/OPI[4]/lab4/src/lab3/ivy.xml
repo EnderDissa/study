@@ -1,0 +1,36 @@
+<ivy-module version="2.0">
+    <info organisation="org.apache" module="hello-ivy"/>
+    <dependencies>
+
+        <dependency org="com.jcraft" name="jsch" rev="0.1.55"/>
+
+        <dependency org="javax.servlet" name="javax.servlet-api" rev="4.0.1"/>
+
+        <dependency org="junit" name="junit" rev="4.13.2"/>
+
+        <dependency org="org.junit.jupiter" name="junit-jupiter-api" rev="5.8.1"/>
+
+        <dependency org="org.junit.jupiter" name="junit-jupiter-params" rev="5.8.1"/>
+
+        <dependency org="org.junit.jupiter" name="junit-jupiter-engine" rev="5.8.1"/>
+
+        <dependency org="com.sun.faces" name="jsf-api" rev="2.2.18"/>
+
+        <dependency org="com.sun.faces" name="jsf-impl" rev="2.2.18"/>
+
+        <dependency org="org.hibernate" name="hibernate-core" rev="5.4.18.Final" />
+
+        <dependency org="org.hibernate" name="hibernate-entitymanager" rev="5.4.18.Final"/>
+
+        <dependency org="org.postgresql" name="postgresql" rev="42.2.12"/>
+
+        <dependency org="org.icefaces" name="icefaces" rev="4.3.0"/>
+
+        <dependency org="org.icefaces" name="icefaces-ace" rev="4.3.0">
+            <artifact name="icefaces-ace" type="pom" ext="pom"/>
+        </dependency>
+
+        <dependency org="ant-contrib" name="ant-contrib" rev="1.0b3"/>
+
+    </dependencies>
+</ivy-module>

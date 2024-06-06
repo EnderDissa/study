@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="DESKTOP-R630T7D" name="HitTest" skipped="0" tests="2" time="0.382" timestamp="2024-05-24T07:11:58">
+  <properties>
+    <property name="ant.library.dir" value="C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.1\lib\ant\lib" />
+    <property name="ant.file.type" value="file" />
+    <property name="java.specification.version" value="19" />
+    <property name="ant.project.name" value="lab3" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="sun.jnu.encoding" value="Cp1251" />
+    <property name="java.class.path" value="C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3\lib\hamcrest-core-1.3.jar;C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3\lib\javaee-web-api-7.0.jar;C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3\lib\junit-4.13.2.jar;C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3\lib\junit-jupiter-api-5.0.0.jar;C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3\target\classes;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.1\lib\ant\lib\ant.jar" />
+    <property name="main" value="src/main" />
+    <property name="java.vm.vendor" value="Amazon.com Inc." />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="changeTest" value="src/main/java/HitTest.java" />
+    <property name="user.variant" value="" />
+    <property name="ant.file.lab3" value="C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3\build.xml" />
+    <property name="java.vendor.url" value="https://aws.amazon.com/corretto/" />
+    <property name="docks" value="target/doc" />
+    <property name="report.test" value="main_report/trunk" />
+    <property name="java.vm.specification.version" value="19" />
+    <property name="os.name" value="Windows 10" />
+    <property name="jar" value="target/lab3.jar" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="user.country" value="RU" />
+    <property name="compiled.tests" value="target/classes" />
+    <property name="sun.boot.library.path" value="C:\Users\HP Pavilion\.jdks\corretto-19.0.2\bin" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner HitTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false formatter=org.apache.tools.ant.taskdefs.optional.junit.SummaryJUnitResultFormatter showoutput=false outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=false formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3\main_report\trunk\TEST-HitTest.xml crashfile=C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3\junitvmwatcher6693711391236520696.properties propsfile=C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3\junit10925803869045181427.properties" />
+    <property name="jdk.debug" value="release" />
+    <property name="test" value="src/main/java" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="user.home" value="C:\Users\HP Pavilion" />
+    <property name="user.language" value="ru" />
+    <property name="sun.stderr.encoding" value="UTF-8" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="newTest" value="src/main/java/AreaControllerTest.java" />
+    <property name="java.version.date" value="2023-01-17" />
+    <property name="java.home" value="C:\Users\HP Pavilion\.jdks\corretto-19.0.2" />
+    <property name="version" value="1.0" />
+    <property name="basedir" value="C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3" />
+    <property name="file.separator" value="\" />
+    <property name="fail" value="sound/fail.wav" />
+    <property name="java.vm.compressedOopsMode" value="32-bit" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="newClass" value="src/main/java/AreaController.java" />
+    <property name="sun.stdout.encoding" value="UTF-8" />
+    <property name="ant.java.version" value="19" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="main.dir" value="src/main/webapp" />
+    <property name="success" value="sound/success.wav" />
+    <property name="altProp" value="./alt.properties" />
+    <property name="user.script" value="" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="creators" value="Max and Marat" />
+    <property name="java.runtime.version" value="19.0.2+7-FR" />
+    <property name="user.name" value="HP Pavilion" />
+    <property name="ant.file" value="C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3\build.xml" />
+    <property name="stdout.encoding" value="Cp1251" />
+    <property name="path.separator" value=";" />
+    <property name="os.version" value="10.0" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="compiled" value="target" />
+    <property name="file.encoding" value="UTF-8" />
+    <property name="ant.project.invoked-targets" value="test" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="src_old" value="./src_old" />
+    <property name="java.vendor.version" value="Corretto-19.0.2.7.1" />
+    <property name="ant.core.lib" value="C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.1\lib\ant\lib\ant.jar" />
+    <property name="java.vendor.url.bug" value="https://github.com/corretto/corretto-19/issues/" />
+    <property name="java.io.tmpdir" value="C:\Users\HPPAVI~1\AppData\Local\Temp\" />
+    <property name="report.file" value="TEST-HitTest.xml" />
+    <property name="java.version" value="19.0.2" />
+    <property name="main.java" value="src/main/java" />
+    <property name="src" value="./src" />
+    <property name="user.dir" value="C:\Users\HP Pavilion\Documents\VITMO\OPI3\src\lab3" />
+    <property name="os.arch" value="amd64" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="ant.home" value="C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.1\lib\ant" />
+    <property name="lib.dir" value="lib" />
+    <property name="ant.file.type.lab3" value="file" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="native.encoding" value="Cp1251" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.12 compiled on October 13 2021" />
+    <property name="java.library.path" value="C:\Users\HP Pavilion\.jdks\corretto-19.0.2\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files (x86)\Common Files\Oracle\Java\java8path;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\apache-ant-1.10.14\bin;C:\Users\HP Pavilion\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\HP Pavilion\AppData\Local\Programs\Python\Python311\;C:\Users\HP Pavilion\AppData\Local\Microsoft\WindowsApps;C:\Program Files\JetBrains\IntelliJ IDEA 2022.3.1\bin;;C:\Users\HP Pavilion\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\Users\HP Pavilion\AppData\Local\GitHubDesktop\bin;C:\Program Files\Java\jdk-22\bin;;." />
+    <property name="java.vendor" value="Amazon.com Inc." />
+    <property name="stderr.encoding" value="Cp1251" />
+    <property name="java.vm.info" value="mixed mode, sharing" />
+    <property name="java.vm.version" value="19.0.2+7-FR" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="compiled.classes" value="target/classes" />
+    <property name="changeClass" value="src/main/java/DotsBean.java" />
+    <property name="java.class.version" value="63.0" />
+  </properties>
+  <testcase classname="HitTest" name="controllerNotHit" time="0.019" />
+  <testcase classname="HitTest" name="controllerHit" time="0.002" />
+  <system-out><![CDATA[Not Hit Test: false
+Hit Test: true
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
